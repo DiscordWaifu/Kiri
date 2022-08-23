@@ -29,7 +29,7 @@ async function findCatGirlResponse() {
 		return 'Oops.';
 	} else {
 		const attachment = new AttachmentBuilder(image, { name: 'catgirl.png', description: 'I\'ts a catgirl. What else did you expect to be here?' });
-		return { attachments: [attachment] };
+		return { attachments: [{ name: 'catgirl', attachment }] };
 	}
 }
 
