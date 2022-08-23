@@ -17,7 +17,7 @@ module.exports = {
 async function findCatGirlResponse() {
 	let image = '';
 	try {
-		const location = path.join(process.cwd(), 'images');
+		const location = path.join(process.cwd(), 'images', 'neko');
 		const files = fs.readdirSync(location);
 		const rand = Math.floor(Math.random() * files.length) + 1;
 		image = fs.readFileSync(path.join(location, files[rand]));
