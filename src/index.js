@@ -3,9 +3,9 @@ require('dotenv').config();
 const path = require('path');
 
 const { GatewayIntentBits } = require('discord.js');
-const AkiClient = require('./library/KiriClient');
+const KiriClient = require('./library/KiriClient');
 
-const client = new AkiClient({ intents: [GatewayIntentBits.Guilds] });
+const client = new KiriClient({ intents: [GatewayIntentBits.Guilds] });
 
 client.keys = {
 	private: path.join(process.cwd(), 'keys', 'jwt.key'),
